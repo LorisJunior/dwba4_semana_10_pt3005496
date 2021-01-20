@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Eventos - IFSP - Pirituba</title>
+<link rel="icon" type="image/icon" href="Imagens/favicon.ico"/>
+<link rel="stylesheet" href="css/formularios.css" type="text/css" />
+<script src="js/disabling.js"></script>
+</head>
+<body>
+
+  <header id="cabecalho">
+
+    <nav>
+        <object width="100%" height="200" data="menu.html"></object>
+    </nav>
+
+    <h1>Inscreva-se</h1>
+  </header>
+
+  <main>
+    <form method="post">
+
+      <fieldset>
+            <label for="Evento">Evento</label><br>
+          
+            <div class="padd1">
+              <select name="Evento" required class="form1">
+              <option value= "">-- Selecione --</option>
+              <option value="voe">Voe sem asas</option>
+              <option value="jun">Festa junina</option>
+              <option value="inf">Semana de tecnologia</option>
+              </select>
+            </div>
+            
+
+    </fieldset>
+
+    <fieldset class="padd1">
+
+      <legend>Informações de Acesso</legend>
+      <div class="padd1">
+        <label for="Usuário" >Usuário</label>
+        <input type="text" name="Info" id="Usuário" required class="form1"><br><br>
+        <label for="Senha">Senha</label>
+        <input type="password" name="Info" id="Senha" required><br><br>
+        <label for="Confirme a Senha">Confirme a Senha</label>
+        <input type="password" name="Info" id="Confirme a Senha" required><br><br>
+      </div>
+      
+    </fieldset>
+
+    <fieldset>
+      <legend>Informações Pessoais</legend>
+
+      <div class="padd1">
+        <label for="Nome Completo">Nome Completo</label>
+        <input type="text" name="Nome Completo" id="Nome Completo" required class="form1"><br><br>
+        <label for="E-mail">E-mail</label>
+        <input type="email" name="E-mail" id="E-mail" required class="form1"><br><br>
+        <label for="Celular">Celular (99) 99999-9999</label>
+        <input type="number" name="Celular" id="Celular" required class="form1">
+      </div>
+      
+
+      <fieldset>
+        <legend>Sexo</legend>
+          <label for="Masculino">Masculino</label>
+          <input type="radio" name="Gender" id="Masculino" required>
+          <label for="Feminino">Feminino</label>
+          <input type="radio" name="Gender" id="Feminino" required>
+      </fieldset>
+        
+        <label for="Data de Nascimento">Data de Nascimento</label>
+        <input type="date" name="Info" id="Data de Nascimento" required><br><br>
+        <label for="Cor Favorita">Cor Favorita</label>
+        <input type="color" name="Info" id="Cor Favorita" required><br><br>
+        <label for="Perfil no Github">Perfil no Github</label>
+        <input type="url" name="Info" id="Perfil no Github" required class="form1">
+        
+    </fieldset>
+
+    <div class="padd1">
+      <input type="submit" value="Inscrever" class="botao"><br><br>
+      <input type="reset" value="Limpar" class="botao">
+    </div>
+    
+
+    </form>
+    
+  </main>
+
+  <footer>
+      <nav>
+        <object width="100%" data="rodape.html"></object>
+      </nav>
+    </footer>
+</body>
+</html>
